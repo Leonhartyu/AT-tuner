@@ -1,0 +1,44 @@
+{
+  "name": "@datami/at-tuner",
+  "version": "0.0.2",
+  "description": "AskTable datasource tuning CLI - problem-driven optimization via API",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "at-tuner": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datamini/at-tuner.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "asktable",
+    "nl2sql",
+    "datasource",
+    "tuning"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
